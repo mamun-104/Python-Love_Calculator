@@ -1,0 +1,29 @@
+#True Love Calculator
+print("The Love calculator is calculating your score")
+
+name1 = input("Your Name")
+name2 = input("Their Name")
+
+result1 = int (0)
+result2 = int (0)
+
+name1 = name1.upper()
+name2 = name2.upper()
+
+combined_name = name1+name2
+l = len(combined_name)
+print(l)
+
+for i in range(l):
+  #print(i, combined_name[i])
+  if combined_name[i] == 'T' or combined_name[i] =='R' or combined_name[i] =='U' or  combined_name[i]=='E':
+    result1 = result1 + 1
+    #print(result1)
+
+for i in range(l):
+  #print(i, combined_name[i])
+  if combined_name[i] == 'L' or combined_name[i] =='O' or combined_name[i] =='V' or  combined_name[i]=='E':
+    result2 = result2 + 1
+    #print(result2)
+
+print(f"Your Score is = {result1}{result2}")
